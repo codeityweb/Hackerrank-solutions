@@ -1,0 +1,53 @@
+Top Competitors - HackerRank Solutions
+
+So the problem statement is as follows:
+
+Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! 
+
+1.Write a query to print the respective hacker_id and name of hackers who achieved full scores for more than one challenge.
+2.Order your output in descending order by the total number of challenges in which the hacker earned a full score.
+3.If more than one hacker received full scores in same number of challenges, then sort them by ascending hacker_id.
+ 
+
+
+Top Competitors - HackerRank Solution Using Where Clause:
+ 
+select h.hacker_id,h.name from
+hackers h,
+challenges c ,
+difficulty d,
+submissions s
+
+where h.hacker_id=s.hacker_id
+and c.challenge_id=s.challenge_id
+and c.difficulty_level=d.difficulty_level
+and s.score=d.score
+
+group by h.hacker_id,h.name having count(h.hacker_id)>1
+
+order by count(s.score) desc,h.hacker_id
+
+
+
+----
+
+Top Competitors- HackerRank Solution Using Joins:
+ 
+select h.hacker_id ,h.name from Submissions as s
+
+inner join Challenges as c on s.challenge_id=c.challenge_id
+inner join Difficulty as d on c.difficulty_level=d.difficulty_level
+inner join Hackers as h on h.hacker_id=s.hacker_id
+
+where s.score=d.score
+
+group by h.hacker_id,h.name
+
+having count(s.hacker_id)>1
+
+order by count(s.score) desc ,s.hacker_id  
+
+
+
+
+
