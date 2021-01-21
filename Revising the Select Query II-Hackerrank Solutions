@@ -1,0 +1,12 @@
+Simple Method For Revising the Select Query II- Hackerrank Solution
+
+Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA. 
+
+
+SQL Query:
+select NAME from CITY where COUNTRYCODE='USA' and POPULATION>=120000
+
+
+To Understand it more!
+visit:https://codeityweb.blogspot.com/2021/01/Simple-Method-For-Revising-the-Select-Query-II-Hackerrank-Solution.html
+
