@@ -1,10 +1,8 @@
 # Hackerrank-solutions
 Solutions for Hackerrank Problems on topics like SQL, Problem Solving,Python , Java 
-
-: <a href="https://github.com/codeityweb/Hackerrank-solutions/blob/main/Pairs%20-%20Hackerrank%20Solutions">solution</a>
  <table>
   <tr>
-    <th>1</th>
+    <th>Sr.No</th>
     <th>Topic Name</th>
     <th>Source</th>
   </tr>
