@@ -11,4 +11,4 @@ select * from CITY where COUNTRYCODE='USA' and POPULATION>=100000;
 
 Do You want to  Understand it better ?
 
-<a href="https://codeityweb.blogspot.com/2021/01/Easiest-way-to-solve-SQL-Revising-the-Select-Query-I-HackerRank.html">Click Here</a>
+https://codeityweb.blogspot.com/2021/01/Easiest-way-to-solve-SQL-Revising-the-Select-Query-I-HackerRank.html
